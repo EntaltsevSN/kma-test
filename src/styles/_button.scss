@@ -5,6 +5,7 @@ input[type="reset"] {
   padding: $button_padding;
   font-size: $button_font_size;
   font-weight: $button_font_weight;
+  font-family: 'Rubik', sans-serif;
   line-height: $button_line_height;
   border: $button_border_width $button_border_style transparent;
   border-radius: $button_border_radius;
@@ -12,37 +13,46 @@ input[type="reset"] {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  letter-spacing: .25px;
+  letter-spacing: .5px;
   white-space: nowrap;
   user-select: none;
   transition: all ease-out .2s;
   touch-action: manipulation;
-  justify-content: space-between;
+  justify-content: center;
+  text-decoration: none;
 
   &.btn--small {
     font-size: $button_small_font_size;
     padding: $button_small_padding;
   }
-}
 
-.btn--primary {
-  &,
-  &.btn--filled {
-    @include button($button_primary_color, 'filled');
+  &.btn--primary {
+    &,
+    &.btn--filled {
+      @include button($button_primary_color, 'filled');
+
+      &[disabled="disabled"] {
+        background-color: lighten($button_primary_color, 50%);
+      }
+    }
+  
+    &.btn--bordered {
+      @include button($button_primary_color, 'bordered');
+    }
   }
+  
+  &.btn--secondary {
+    &,
+    &.btn--filled {
+      @include button($button_secondary_color, 'filled');
 
-  &.btn--bordered {
-    @include button($button_primary_color, 'bordered');
-  }
-}
-
-.btn--secondary {
-  &,
-  &.btn--filled {
-    @include button($button_secondary_color, 'filled');
-  }
-
-  &.btn--bordered {
-    @include button($button_secondary_color, 'bordered');
+      &[disabled="disabled"] {
+        background-color: lighten($button_secondary_color, 50%);
+      }
+    }
+  
+    &.btn--bordered {
+      @include button($button_secondary_color, 'bordered');
+    }
   }
 }

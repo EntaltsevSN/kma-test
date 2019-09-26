@@ -84,5 +84,13 @@ h6,
 
 a {
   color: $link_color;
-  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
 }

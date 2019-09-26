@@ -23,7 +23,7 @@ const dev = 'dev';
 
 const path = {
   html: 'src/templates/**/*.html',
-  js: 'src/scripts/**/*.js',
+  js: ['src/scripts/**/*.js', 'src/scripts/**/*.json'],
   scss: 'src/styles/**/*.scss',
   images: 'src/assets/**/*.+(png|jpg|gif|svg)',
   fonts: 'src/assets/**/*.+(woff|woff2)'

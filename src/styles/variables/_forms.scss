@@ -6,8 +6,22 @@ $input_line_height: $line_height - .1;
 $input_padding: ($spacer/ 2) ($spacer * .75);
 $input_border_width: $spacer / 8;
 $input_border_style: solid;
-$input_border_color: lighten($gray_color, 24%);
-$input_border_radius: $spacer / 4;
+$input_border_color: #b0b0b0;
+$input_border_radius: 0;
 $input_background_color: #fff;
 $input_text_transform: uppercase;
 $input_filled_text_color: #fff;
+$input_placeholder_color: $text_color;
+$input_placeholder_weight: 600;
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@include placeholder {
+    color: $input_placeholder_color;
+    font-weight: $input_placeholder_weight;
+}

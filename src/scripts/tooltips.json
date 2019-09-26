@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "icon_url": "assets/tooltip_users.png",
+    "text": "Количество посетителей на сайте:<br /><span class='tooltip__users'>172</span>"
+  },
+  {
+    "id": 2,
+    "icon_url": "assets/tooltip_call.png",
+    "text": "Станислав сделал заявку на обратный звонок"
+  },
+  {
+    "id": 3,
+    "icon_url": "assets/tooltip_cart.png",
+    "text": "Станислав только что совершил покупку на сумму 3000 руб."
+  }
+]

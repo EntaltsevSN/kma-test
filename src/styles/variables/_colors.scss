@@ -1,10 +1,10 @@
 // Main colors
-$primary_color: #f3826f;
-$secondary_color: #2d3561;
-$additional_color: #ffb961;
+$primary_color: #f7bc00;
+$secondary_color: #232323;
+$additional_color: #c58e61;
 
 // Text colors
-$text_color: #242124;
+$text_color: #474747;
 $link_color: $primary_color;
 $heading-color: $text_color;
 $button_color: $secondary_color;
@@ -12,3 +12,11 @@ $gray_color: #888;
 
 // Background colors
 $body_color: #fff;
+
+// Custom variables
+$header_bg: #fff;
+$footer_bg: #232323;
+$badges_bg: #232323;
+$advantages_bg: #f0f6f6;
+$consequences_bg: #fff;
+$stock_color: #983734;

@@ -1,12 +1,12 @@
 // Button settings
 $button_font_size: $font_size - 4;
-$button_font_weight: 400;
+$button_font_weight: 700;
 $button_font_family: $font_family;
 $button_line_height: $line_height;
 $button_padding: ($spacer/ 2) $spacer;
 $button_border_width: $spacer / 8;
 $button_border_style: solid;
-$button_border_radius: $spacer / 4;
+$button_border_radius: 0;
 $button_text_transform: uppercase;
 $button_filled_text_color: #fff;
 
